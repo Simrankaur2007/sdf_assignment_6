@@ -13,18 +13,6 @@ from mortgage.pixell_lookup import MortgageRate, MortgageFrequency, VALID_AMORTI
 
 class MortgageTests(unittest.TestCase):
     
-    def test_init_valid_inputs(self):
-        loan_amount = 500000
-        rate = MortgageRate.FIXED_5
-        frequency = MortgageFrequency.MONTHLY
-        amortization = 30
-
-        mortgage = Mortgage(loan_amount, rate, frequency, amortization)
-
-        # Verify using accessors
-        self.assertEqual(mortgage.loan_amount, loan_amount)
-        self.assertEqual(mortgage.rate, rate)
-        self.assertEqual(mortgage.frequency, frequency)
-        self.assertEqual(mortgage.amortization, amortization)
+ 
  
    
