@@ -32,3 +32,6 @@ class Mortgage:
  def _validate_rate(self):
         if not isinstance(self.rate, MortgageRate):
             raise ValueError("Rate provided is invalid.")
+ def _validate_frequency(self):
+        if not isinstance(self.frequency, MortgageFrequency):
+            raise ValueError("Frequency provided is invalid.")
