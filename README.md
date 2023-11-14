@@ -27,5 +27,5 @@ This assignment, Assignment 6, focuses on defining and using classes. The key co
 
 ## Notes
 - The project aims to provide accurate mortgage payment information based on client input.
-- Regularly update the README file as necessary to reflect changes or additional features.
+
 
