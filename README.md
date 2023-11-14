@@ -1,4 +1,4 @@
-# Assignment 6
+# sdf_Assignment 6
 
 ## Description
 This project involves the use of classes and enums to determine mortgage payment options for clients. It includes the creation of an Enum, a Class, a Unit Test Class, and updates to the client program.
