@@ -41,3 +41,13 @@ class MortgageTests(unittest.TestCase):
         # Test Mutator (set to positive value)
         mortgage.loan_amount = 600000
         self.assertEqual(mortgage.loan_amount, 600000)
+ def test_rate_accessor_mutator(self):
+        mortgage = Mortgage(500000, MortgageRate.FIXED_5, MortgageFrequency.MONTHLY, 30)
+        
+        # Test Mutator (set to invalid value)
+        with self.assertRaises(ValueError):
+            mortgage.rate = 0.05
+
+        # Test Mutator (set to valid value)
+        mortgage.rate = MortgageRate.VARIABLE_3
+        self.assertEqual(mortgage.rate, MortgageRate.VARIABLE_3)

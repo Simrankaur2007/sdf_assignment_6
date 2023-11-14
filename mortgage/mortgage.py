@@ -28,3 +28,7 @@ class Mortgage:
             raise ValueError("Loan Amount must be positive.")
 
     
+
+ def _validate_rate(self):
+        if not isinstance(self.rate, MortgageRate):
+            raise ValueError("Rate provided is invalid.")
