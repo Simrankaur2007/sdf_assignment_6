@@ -23,8 +23,4 @@ class Mortgage:
         self._validate_frequency()
         self._validate_amortization()
 
-    def _validate_loan_amount(self):
-        if self.loan_amount <= 0:
-            raise ValueError("Loan Amount must be positive.")
-
     
